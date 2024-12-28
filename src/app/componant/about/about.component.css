@@ -1,0 +1,102 @@
+.line {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  border: 1px solid orange
+}
+
+.mainSection {
+  padding-top: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.discription h1 {
+  text-align: center;
+  color: orange;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.left img {
+  margin-bottom: 30px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+
+.right .head h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.right .head h1 span {
+  color: orange;
+}
+
+.right p {
+  font-weight: 600;
+}
+
+.right .but button {
+  margin-right: 10px;
+  padding: 6px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.right .but .btnLeft {
+  background-color: #000;
+  color: orange;
+  transition: 0.3s ease;
+
+}
+
+.right .but .btnLeft:active {
+  scale: 0.9;
+}
+
+
+.right .but .btnRight {
+  background-color: orange;
+  color: #000;
+  transition: 0.3s ease;
+
+}
+
+.right .but .btnRight:active {
+  scale: 0.9;
+}
+
+
+
+
+@media (max-width: 916px){
+  .mainSection {
+    flex-direction: column;
+  }
+  .right {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  .mainSection {
+    padding-top: 150px;
+  }
+  .left img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 280px){
+  .left img {
+    height: 100px;
+  }
+  .right .but button {
+    margin-top: 30px;
+  }
+}

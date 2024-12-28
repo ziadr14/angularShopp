@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+}
+
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease;
+
+}
+
+.nav-links li a:hover {
+  color:#000;
+  letter-spacing: 1px;
+}
+
+
+
+/* للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: orange;
+  }
+
+  .nav-links.open {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .menu-icon span.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-icon span.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon span.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  ul {
+    padding-bottom: 20px;
+  }
+}

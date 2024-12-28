@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/angularShopp/about": {},
+    "/angularShopp/card": {},
+    "/angularShopp/contact": {},
+    "/angularShopp/home": {},
+    "/angularShopp/product": {}
+  }
+}

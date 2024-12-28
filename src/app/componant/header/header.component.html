@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="logo">Abo Ziad</div>
+  <div class="menu-icon" (click)="toggleMenu()">
+    <span [ngClass]="{'open': isMenuOpen}"></span>
+    <span [ngClass]="{'open': isMenuOpen}"></span>
+    <span [ngClass]="{'open': isMenuOpen}"></span>
+  </div>
+
+    <ul [ngClass]="{'nav-links': true, 'open': isMenuOpen}">
+      <li><a href="" (click)="toggleMenu()" routerLink="/home">Home</a></li>
+      <li><a href="" (click)="toggleMenu()" routerLink="/product">Product</a></li>
+      <li><a href="" (click)="toggleMenu()" routerLink="/about">About</a></li>
+      <li><a href="" (click)="toggleMenu()" routerLink="/contact">Contact Us</a></li>
+      <li><a href="" (click)="toggleMenu()" routerLink="/card">Card</a></li>
+      <i class="fa-solid fa-user"></i>
+    </ul>
+  </nav>
+
+
